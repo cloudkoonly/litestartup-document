@@ -24,10 +24,15 @@ LiteStartup is a SaaS email marketing platform designed specifically for startup
 ## Key Features
 
 ✓ **Workmail** - Built-in business email (no Google Workspace needed)
+
 ✓ **AI Assistant** - Generate subject lines and email content
+
 ✓ **Automation** - Smart workflows triggered by user behavior
+
 ✓ **Affordable** - Pay per email sent, not per contact
+
 ✓ **Easy Integration** - Simple REST API, works with any language
+
 ✓ **Enterprise Reliability** - 99.99% uptime, SOC2 & GDPR compliant
 
 ## Getting Started
