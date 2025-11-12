@@ -18,8 +18,8 @@ LiteStartup is a SaaS email marketing platform designed specifically for startup
 ## Quick Links
 
 - [LiteStartup Website](https://www.litestartup.com)
-- [Create Free Account](https://www.litestartup.com/signup)
-- [Dashboard](https://www.litestartup.com/dashboard)
+- [Create Free Account](https://app.litestartup.com/signup)
+- [Dashboard](https://app.litestartup.com/dashboard)
 
 ## Key Features
 
@@ -47,4 +47,4 @@ LiteStartup is a SaaS email marketing platform designed specifically for startup
 
 ---
 
-**Ready to get started?** [Create your free account](https://www.litestartup.com/signup) today!
+**Ready to get started?** [Create your free account](https://app.litestartup.com/signup) today!
