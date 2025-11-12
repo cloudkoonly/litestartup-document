@@ -1,4 +1,3 @@
-- **Documentation**
 - [Overview](README.md)
 - [Introduction](00-introduction.md)
 - [Getting Started](01-getting-started.md)
