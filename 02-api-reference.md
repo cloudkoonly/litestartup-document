@@ -5,7 +5,7 @@ Complete reference for the LiteStartup REST API. All requests must be authentica
 ## Base URL
 
 ```
-https://api.litestartup.com
+https://api.litestartup.com/client/v2
 ```
 
 ## Authentication
@@ -21,7 +21,7 @@ Authorization: Bearer YOUR_API_KEY
 ### Example
 
 ```bash
-curl -X GET https://api.litestartup.com/emails \
+curl -X GET https://api.litestartup.com/client/v2/verify \
   -H "Authorization: Bearer sk_live_xxxxxxxxxxxxx"
 ```
 
@@ -33,13 +33,7 @@ All API responses are returned in JSON format.
 
 ```json
 {
-  "success": true,
-  "data": {
-    "id": "email_123",
-    "to": "user@example.com",
-    "status": "delivered"
-  },
-  "message": "Email sent successfully"
+  "uuid": "xxxxxxxxxxxxx"
 }
 ```
 
@@ -47,10 +41,7 @@ All API responses are returned in JSON format.
 
 ```json
 {
-  "success": false,
-  "error": "Invalid email address",
-  "code": "INVALID_EMAIL",
-  "status": 400
+  "error": "Invalid API key"
 }
 ```
 
@@ -76,90 +67,47 @@ All API responses are returned in JSON format.
 
 Send a single email or batch of emails.
 
-**Endpoint**: `POST /emails/send`
+**Endpoint**: `POST /emails`
 
-**Request Body**
+**Body Parameters**
 
-```json
-{
-  "to": "recipient@example.com",
-  "from": "sender@yourdomain.com",
-  "subject": "Welcome!",
-  "html": "<h1>Hello</h1><p>Welcome to our service.</p>",
-  "text": "Hello! Welcome to our service.",
-  "reply_to": "support@yourdomain.com",
-  "cc": ["cc@example.com"],
-  "bcc": ["bcc@example.com"],
-  "headers": {
-    "X-Custom-Header": "value"
-  },
-  "tags": ["welcome", "onboarding"],
-  "metadata": {
-    "user_id": "123",
-    "campaign": "welcome_series"
-  },
-  "template_id": "tmpl_123",
-  "template_variables": {
-    "name": "John",
-    "activation_link": "https://example.com/activate"
-  },
-  "scheduled_at": "2024-01-15T10:30:00Z",
-  "track_opens": true,
-  "track_clicks": true
-}
-```
-
-**Parameters**
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| to | string \| array | Yes | Recipient email address(es) |
-| from | string | Yes | Sender email address |
-| subject | string | Yes | Email subject line |
-| html | string | No | HTML email body |
-| text | string | No | Plain text email body |
-| reply_to | string | No | Reply-to email address |
-| cc | array | No | CC recipients |
-| bcc | array | No | BCC recipients |
-| headers | object | No | Custom email headers |
-| tags | array | No | Email tags for organization |
-| metadata | object | No | Custom metadata |
-| template_id | string | No | Email template ID |
+| Parameter          | Type | Required | Description |
+|--------------------|------|----------|-------------|
+| to                 | string \| array | Yes | Recipient email address(es) |
+| from               | string | Yes | Sender email address |
+| subject            | string | Yes | Email subject line |
+| html               | string | No | HTML email body |
+| text               | string | No | Plain text email body |
+| replyTo            | string | No | Reply-to email address |
+| cc                 | array | No | CC recipients |
+| bcc                | array | No | BCC recipients |
+| headers            | object | No | Custom email headers |
+| tags               | array | No | Email tags for organization |
+| metadata           | object | No | Custom metadata |
+| template_id        | string | No | Email template ID |
 | template_variables | object | No | Variables for template |
-| scheduled_at | string | No | ISO 8601 timestamp for scheduling |
-| track_opens | boolean | No | Enable open tracking (default: true) |
-| track_clicks | boolean | No | Enable click tracking (default: true) |
+| scheduled_at       | string | No | ISO 8601 timestamp for scheduling |
 
 **Response**
 
 ```json
 {
-  "success": true,
-  "data": {
-    "id": "email_1234567890",
-    "to": "recipient@example.com",
-    "from": "sender@yourdomain.com",
-    "subject": "Welcome!",
-    "status": "queued",
-    "created_at": "2024-01-15T10:00:00Z",
-    "scheduled_at": null
-  }
+  "messageId": "xxxxxxxxxxxxxxxx"
 }
 ```
 
 **Example**
 
 ```bash
-curl -X POST https://api.litestartup.com/emails/send \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "to": "user@example.com",
-    "from": "hello@yourdomain.com",
-    "subject": "Welcome!",
-    "html": "<h1>Hello</h1>",
-    "text": "Hello"
-  }'
+curl -X POST https://api.litestartup.com/client/v2/emails \
+     -H 'Authorization: Bearer sk_live_xxxxxxxxxxxxx' \
+     -H 'Content-Type: application/json' \
+     -d '{
+  "to": "recipient@example.com",
+  "from": "sender@yourdomain.com",
+  "subject": "Welcome!",
+  "html": "<h1>Hello</h1><p>Welcome to litestartup.</p>"
+}'
 ```
 
 #### Get Email Status
@@ -238,7 +186,7 @@ Retrieve a list of sent emails with pagination and filtering.
 **Example**
 
 ```bash
-curl -X GET "https://api.litestartup.com/emails?status=delivered&limit=10" \
+curl -X GET "https://api.litestartup.com/client/v2/emails?status=delivered&limit=10" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
@@ -589,7 +537,7 @@ Retry-After: 60
 List endpoints support pagination with `page` and `limit` parameters.
 
 ```bash
-curl -X GET "https://api.litestartup.com/emails?page=2&limit=50" \
+curl -X GET "https://api.litestartup.com/client/v2/emails?page=2&limit=50" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
@@ -612,11 +560,11 @@ List endpoints support filtering and sorting:
 
 ```bash
 # Filter by status
-curl -X GET "https://api.litestartup.com/emails?status=delivered" \
+curl -X GET "https://api.litestartup.com/client/v2/emails?status=delivered" \
   -H "Authorization: Bearer YOUR_API_KEY"
 
 # Sort by date
-curl -X GET "https://api.litestartup.com/emails?sort=created_at&order=desc" \
+curl -X GET "https://api.litestartup.com/client/v2/emails?sort=created_at&order=desc" \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
