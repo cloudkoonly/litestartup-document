@@ -18,7 +18,7 @@ All API requests require authentication using Bearer token authentication.
 Authorization: Bearer YOUR_API_KEY
 ```
 
-### Example
+### Verify API Key
 
 ```bash
 curl -X GET https://api.litestartup.com/client/v2/verify \
@@ -59,11 +59,10 @@ All API responses are returned in JSON format.
 | 429 | Too Many Requests - Rate limit exceeded |
 | 500 | Server Error - Internal server error |
 
-## Endpoints
+## Emails
 
-### Emails
-
-#### Send Email
+---
+### Send Email
 
 Send a single email or batch of emails.
 
@@ -81,12 +80,6 @@ Send a single email or batch of emails.
 | replyTo            | string | No | Reply-to email address |
 | cc                 | array | No | CC recipients |
 | bcc                | array | No | BCC recipients |
-| headers            | object | No | Custom email headers |
-| tags               | array | No | Email tags for organization |
-| metadata           | object | No | Custom metadata |
-| template_id        | string | No | Email template ID |
-| template_variables | object | No | Variables for template |
-| scheduled_at       | string | No | ISO 8601 timestamp for scheduling |
 
 **Response**
 
@@ -110,7 +103,7 @@ curl -X POST https://api.litestartup.com/client/v2/emails \
 }'
 ```
 
-#### Get Email Status
+### Get Sent Email Status
 
 Retrieve the status and details of a sent email.
 
@@ -138,7 +131,7 @@ Retrieve the status and details of a sent email.
 }
 ```
 
-#### List Emails
+### List Sent Emails
 
 Retrieve a list of sent emails with pagination and filtering.
 
@@ -190,9 +183,11 @@ curl -X GET "https://api.litestartup.com/client/v2/emails?status=delivered&limit
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
-### Templates
 
-#### Create Template
+## Templates
+
+---
+### Create Template
 
 Create a reusable email template.
 
@@ -224,7 +219,7 @@ Create a reusable email template.
 }
 ```
 
-#### Get Template
+### Get Template
 
 Retrieve a template by ID.
 
@@ -247,7 +242,7 @@ Retrieve a template by ID.
 }
 ```
 
-#### List Templates
+### List Templates
 
 **Endpoint**: `GET /templates`
 
@@ -271,7 +266,7 @@ Retrieve a template by ID.
 }
 ```
 
-#### Update Template
+### Update Template
 
 **Endpoint**: `PUT /templates/{template_id}`
 
@@ -285,7 +280,7 @@ Retrieve a template by ID.
 }
 ```
 
-#### Delete Template
+### Delete Template
 
 **Endpoint**: `DELETE /templates/{template_id}`
 
