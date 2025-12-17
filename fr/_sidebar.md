@@ -1,4 +1,4 @@
-- [Vue d'ensemble](README.md)
+- [Vue d'ensemble](/fr/README.md)
 - [Introduction](/fr/00-introduction.md)
 - [Commencer](/fr/01-getting-started.md)
 - [Référence API](/fr/02-api-reference.md)
@@ -6,6 +6,6 @@
 - [Exemples de code](/fr/04-examples.md)
 - [Tarifs & Plans](/fr/05-pricing.md)
 - **Liens**
-- [![Website](assets/img/code.svg)LiteStartup.com](https://www.litestartup.com)
-- [![Github](assets/img/github.svg)Github](https://github.com/cloudkoonly/litestartup-document)
-- [![Twitter](assets/img/twitter.svg)@litestartup_com](http://x.com/litestartup_com)
+- [![Website](../assets/img/code.svg)LiteStartup.com](https://www.litestartup.com)
+- [![Github](../assets/img/github.svg)Github](https://github.com/cloudkoonly/litestartup-document)
+- [![Twitter](../assets/img/twitter.svg)@litestartup_com](http://x.com/litestartup_com)

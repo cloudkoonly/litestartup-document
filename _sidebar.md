@@ -6,6 +6,6 @@
 - [Code Examples](04-examples.md)
 - [Pricing & Plans](05-pricing.md)
 - **Links**
-- [![Website](assets/img/code.svg)LiteStartup.com](https://www.litestartup.com)
-- [![Github](assets/img/github.svg)Github](https://github.com/cloudkoonly/litestartup-document)
-- [![Twitter](assets/img/twitter.svg)@litestartup_com](http://x.com/litestartup_com)
+- [![Website](../assets/img/code.svg)LiteStartup.com](https://www.litestartup.com)
+- [![Github](../assets/img/github.svg)Github](https://github.com/cloudkoonly/litestartup-document)
+- [![Twitter](../assets/img/twitter.svg)@litestartup_com](http://x.com/litestartup_com)

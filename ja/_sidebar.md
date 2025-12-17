@@ -1,4 +1,4 @@
-- [概要](README.md)
+- [概要](/ja/README.md)
 - [はじめに](/ja/00-introduction.md)
 - [スタートガイド](/ja/01-getting-started.md)
 - [API リファレンス](/ja/02-api-reference.md)
@@ -6,6 +6,6 @@
 - [コード例](/ja/04-examples.md)
 - [料金プラン](/ja/05-pricing.md)
 - **リンク**
-- [![Website](assets/img/code.svg)LiteStartup.com](https://www.litestartup.com)
-- [![Github](assets/img/github.svg)Github](https://github.com/cloudkoonly/litestartup-document)
-- [![Twitter](assets/img/twitter.svg)@litestartup_com](http://x.com/litestartup_com)
+- [![Website](../assets/img/code.svg)LiteStartup.com](https://www.litestartup.com)
+- [![Github](../assets/img/github.svg)Github](https://github.com/cloudkoonly/litestartup-document)
+- [![Twitter](../assets/img/twitter.svg)@litestartup_com](http://x.com/litestartup_com)
