@@ -8,12 +8,12 @@ LiteStartup は、スタートアップ向けに特別に設計された SaaS �
 
 ## ドキュメントの内容
 
-- **[はじめに](00-introduction.md)** - LiteStartup とは何か、なぜ使用すべきかを学びます
-- **[スタートガイド](01-getting-started.md)** - 5分以内にサインアップして最初のメールを送信します
-- **[API リファレンス](02-api-reference.md)** - 完全な API ドキュメントとエンドポイント
-- **[機能ガイド](03-features.md)** - すべての機能を詳細に探索します
-- **[コード例](04-examples.md)** - 複数の言語での実装例
-- **[料金プラン](05-pricing.md)** - 価格と請求について理解します
+- **[はじめに](/ja/00-introduction.md)** - LiteStartup とは何か、なぜ使用すべきかを学びます
+- **[スタートガイド](/ja/01-getting-started.md)** - 5分以内にサインアップして最初のメールを送信します
+- **[API リファレンス](/ja/02-api-reference.md)** - 完全な API ドキュメントとエンドポイント
+- **[機能ガイド](/ja/03-features.md)** - すべての機能を詳細に探索します
+- **[コード例](/ja/04-examples.md)** - 複数の言語での実装例
+- **[料金プラン](/ja/05-pricing.md)** - 価格と請求について理解します
 
 ## クイックリンク
 
@@ -37,15 +37,15 @@ LiteStartup は、スタートアップ向けに特別に設計された SaaS �
 
 ## はじめに
 
-1. **[はじめにを読む](00-introduction.md)** プラットフォームを理解する
-2. **[スタートガイドに従う](01-getting-started.md)** 最初のメールを送信する
-3. **[API リファレンスを確認](02-api-reference.md)** 技術的な詳細を確認する
-4. **[コード例を確認](04-examples.md)** プログラミング言語の例を探す
-5. **[機能を探索](03-features.md)** 高度な機能を学ぶ
+1. **[はじめにを読む](/ja/00-introduction.md)** プラットフォームを理解する
+2. **[スタートガイドに従う](/ja/01-getting-started.md)** 最初のメールを送信する
+3. **[API リファレンスを確認](/ja/02-api-reference.md)** 技術的な詳細を確認する
+4. **[コード例を確認](/ja/04-examples.md)** プログラミング言語の例を探す
+5. **[機能を探索](/ja/03-features.md)** 高度な機能を学ぶ
 
 ## サポート
 
-- 📖 [包括的なドキュメント](00-introduction.md) を確認する
+- 📖 [包括的なドキュメント](/ja/00-introduction.md) を確認する
 - 💬 サポートについては [LiteStartup.com](https://www.litestartup.com) をご覧ください
 - 🐛 GitHub で問題を報告する
 - 📧 連絡先: support@litestartup.com

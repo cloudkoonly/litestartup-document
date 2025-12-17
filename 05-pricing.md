@@ -26,9 +26,13 @@ Perfect for getting started and testing the platform.
 - Unlimited contacts
 - Basic email templates
 - Email tracking (opens & clicks)
-- Workmail (1 email account)
+- Workmail (1 team & 20 members)
 - Basic automation
 - API access
+- AI Website Builder
+- Ticket & Live chat
+- AI Content Assistant
+- AI Automation (coming soon)
 - Community support
 
 **Limitations:**
@@ -103,16 +107,18 @@ For large-scale operations and enterprises.
 | Monthly Emails | 10K | 110K | Unlimited |
 | Price | Free | $20 | Custom |
 | Overage Rate | N/A | $0.20/1K | Included |
-| Contacts | Unlimited | Unlimited | Unlimited |
-| Workmail Accounts | 1 | 5 | Unlimited |
+| Contacts | 3000 | Unlimited | Unlimited |
+| Contacts Tags | 1 | Unlimited | Unlimited |
+| Domains | 1 | 10 | Unlimited |
+| Workmail Accounts | 1 team & 20 members | 10 team & Unlimited members | Unlimited |
 | Email Templates | Basic | All | All + Custom |
 | Automation | Basic | Advanced | Advanced + Custom |
-| AI Assistant | No | Yes | Yes |
-| Subscription Forms | No | Yes | Yes |
-| Waitlist Management | No | Yes | Yes |
-| Webhooks | No | Yes | Yes |
+| AI Assistant | Yes | Yes | Yes |
+| AI Website Builder | Yes | Yes | Yes |
+| Ticket & Live chat | Yes | Yes | Yes |
+| Webhooks | Yes | Yes | Yes |
 | API Access | Yes | Yes | Yes |
-| Support | Community | Priority | 24/7 Dedicated |
+| Support | 5x8 | 7x24 | 7x24(Dedicated) |
 | Uptime SLA | 99.9% | 99.9% | 99.99% |
 | Custom Domain | No | Yes | Yes |
 

@@ -1,19 +1,19 @@
 # LiteStartup 文档
 
-LiteStartup 专业文档 - 为初创企业打造的智能邮件营销平台。
+LiteStartup 专业文档 - 为新创企业打造的智能邮件营销平台。
 
 ## 概览
 
-LiteStartup 是专为初创企业设计的 SaaS 邮件营销平台。它结合了企业邮箱（工作邮箱）、AI 内容生成和可靠的邮件投递服务，是一个价格实惠、易于使用的平台。
+LiteStartup 是专为新创企业设计的 SaaS 邮件营销平台。它结合了企业邮箱（工作邮箱）、AI 内容生成和可靠的邮件投递服务，是一个价格实惠、易于使用的平台。
 
 ## 文档内容
 
-- **[介绍](00-introduction.md)** - 了解 LiteStartup 是什么以及为什么选择它
-- **[快速开始](01-getting-started.md)** - 5分钟内注册并发送您的第一封邮件
-- **[API 参考](02-api-reference.md)** - 完整的 API 文档和端点
-- **[功能指南](03-features.md)** - 详细了解所有功能
-- **[代码示例](04-examples.md)** - 多种语言的实现示例
-- **[价格方案](05-pricing.md)** - 了解价格和计费
+- **[介绍](/zh-cn/00-introduction.md)** - 了解 LiteStartup 是什么以及为什么选择它
+- **[快速开始](/zh-cn/01-getting-started.md)** - 5 分钟内注册并发送您的第一封邮件
+- **[API 参考](/zh-cn/02-api-reference.md)** - 完整的 API 文档和端点
+- **[功能指南](/zh-cn/03-features.md)** - 详细了解所有功能
+- **[代码范例](/zh-cn/04-examples.md)** - 多种语言的实现范例
+- **[价格方案](/zh-cn/05-pricing.md)** - 了解价格和计费
 
 ## 快速链接
 
@@ -23,7 +23,7 @@ LiteStartup 是专为初创企业设计的 SaaS 邮件营销平台。它结合�
 
 ## 核心功能
 
-✓ **企业邮箱** - 内置企业邮箱（无需 Google Workspace）
+✓ **企业邮箱** - 内建企业邮箱（无需 Google Workspace）
 
 ✓ **AI 助手** - 生成邮件主题和内容
 
@@ -31,21 +31,21 @@ LiteStartup 是专为初创企业设计的 SaaS 邮件营销平台。它结合�
 
 ✓ **价格实惠** - 按发送邮件数量付费，而非联系人数量
 
-✓ **易于集成** - 简单的 REST API，支持任何语言
+✓ **易于整合** - 简单的 REST API，支持任何语言
 
 ✓ **企业级可靠性** - 99.99% 在线率，符合 SOC2 和 GDPR 标准
 
 ## 开始使用
 
-1. **[阅读介绍](00-introduction.md)** 了解平台
-2. **[跟随快速开始指南](01-getting-started.md)** 发送您的第一封邮件
-3. **[查看 API 参考](02-api-reference.md)** 了解技术细节
-4. **[查阅代码示例](04-examples.md)** 寻找对应编程语言的示例
-5. **[探索功能](03-features.md)** 学习高级功能
+1. **[阅读介绍](/zh-cn/00-introduction.md)** 了解平台
+2. **[跟随快速开始指南](/zh-cn/01-getting-started.md)** 发送您的第一封邮件
+3. **[查看 API 参考](/zh-cn/02-api-reference.md)** 了解技术细节
+4. **[查阅代码范例](/zh-cn/04-examples.md)** 寻找对应编程语言的范例
+5. **[探索功能](/zh-cn/03-features.md)** 学习进阶功能
 
 ## 支持
 
-- 📖 查看我们的 [完整文档](00-introduction.md)
+- 📖 查看我们的 [完整文档](/zh-cn/00-introduction.md)
 - 💬 访问 [LiteStartup.com](https://www.litestartup.com) 获取支持
 - 🐛 在 GitHub 上报告问题
 - 📧 联系方式: support@litestartup.com

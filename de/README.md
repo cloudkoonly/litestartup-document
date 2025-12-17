@@ -8,12 +8,12 @@ LiteStartup ist eine SaaS-E-Mail-Marketing-Plattform, die speziell für Startups
 
 ## Inhalt der Dokumentation
 
-- **[Einführung](00-introduction.md)** - Erfahren Sie, was LiteStartup ist und warum Sie es verwenden sollten
-- **[Erste Schritte](01-getting-started.md)** - Registrieren Sie sich und senden Sie Ihre erste E-Mail in 5 Minuten
-- **[API-Referenz](02-api-reference.md)** - Vollständige API-Dokumentation und Endpunkte
-- **[Funktionsübersicht](03-features.md)** - Erkunden Sie alle Funktionen im Detail
-- **[Code-Beispiele](04-examples.md)** - Implementierungsbeispiele in mehreren Sprachen
-- **[Preise & Pläne](05-pricing.md)** - Verstehen Sie Preise und Abrechnung
+- **[Einführung](/de/00-introduction.md)** - Erfahren Sie, was LiteStartup ist und warum Sie es verwenden sollten
+- **[Erste Schritte](/de/01-getting-started.md)** - Registrieren Sie sich und senden Sie Ihre erste E-Mail in 5 Minuten
+- **[API-Referenz](/de/02-api-reference.md)** - Vollständige API-Dokumentation und Endpunkte
+- **[Funktionsübersicht](/de/03-features.md)** - Erkunden Sie alle Funktionen im Detail
+- **[Code-Beispiele](/de/04-examples.md)** - Implementierungsbeispiele in mehreren Sprachen
+- **[Preise & Pläne](/de/05-pricing.md)** - Verstehen Sie Preise und Abrechnung
 
 ## Schnellzugriff
 
@@ -37,15 +37,15 @@ LiteStartup ist eine SaaS-E-Mail-Marketing-Plattform, die speziell für Startups
 
 ## Erste Schritte
 
-1. **[Lesen Sie die Einführung](00-introduction.md)** um die Plattform zu verstehen
-2. **[Folgen Sie dem Leitfaden für erste Schritte](01-getting-started.md)** um Ihre erste E-Mail zu senden
-3. **[Prüfen Sie die API-Referenz](02-api-reference.md)** für technische Details
-4. **[Sehen Sie sich Code-Beispiele an](04-examples.md)** für Ihre Programmiersprache
-5. **[Erkunden Sie Funktionen](03-features.md)** um erweiterte Funktionen kennenzulernen
+1. **[Lesen Sie die Einführung](/de/00-introduction.md)** um die Plattform zu verstehen
+2. **[Folgen Sie dem Leitfaden für erste Schritte](/de/01-getting-started.md)** um Ihre erste E-Mail zu senden
+3. **[Prüfen Sie die API-Referenz](/de/02-api-reference.md)** für technische Details
+4. **[Sehen Sie sich Code-Beispiele an](/de/04-examples.md)** für Ihre Programmiersprache
+5. **[Erkunden Sie Funktionen](/de/03-features.md)** um erweiterte Funktionen kennenzulernen
 
 ## Support
 
-- 📖 Schauen Sie in unsere [umfassende Dokumentation](00-introduction.md)
+- 📖 Schauen Sie in unsere [umfassende Dokumentation](/de/00-introduction.md)
 - 💬 Besuchen Sie [LiteStartup.com](https://www.litestartup.com) für Support
 - 🐛 Melden Sie Probleme auf GitHub
 - 📧 Kontakt: support@litestartup.com

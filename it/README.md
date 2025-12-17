@@ -8,12 +8,12 @@ LiteStartup è una piattaforma di email marketing SaaS progettata specificamente
 
 ## Contenuti della documentazione
 
-- **[Introduzione](00-introduction.md)** - Scopri cos'è LiteStartup e perché dovresti usarlo
-- **[Guida introduttiva](01-getting-started.md)** - Iscriviti e invia la tua prima email in 5 minuti
-- **[Riferimento API](02-api-reference.md)** - Documentazione API completa ed endpoint
-- **[Guida alle funzionalità](03-features.md)** - Esplora tutte le funzionalità in dettaglio
-- **[Esempi di codice](04-examples.md)** - Esempi di implementazione in più linguaggi
-- **[Prezzi e Piani](05-pricing.md)** - Comprendi i prezzi e la fatturazione
+- **[Introduzione](/it/00-introduction.md)** - Scopri cos'è LiteStartup e perché dovresti usarlo
+- **[Guida introduttiva](/it/01-getting-started.md)** - Iscriviti e invia la tua prima email in 5 minuti
+- **[Riferimento API](/it/02-api-reference.md)** - Documentazione API completa ed endpoint
+- **[Guida alle funzionalità](/it/03-features.md)** - Esplora tutte le funzionalità in dettaglio
+- **[Esempi di codice](/it/04-examples.md)** - Esempi di implementazione in più linguaggi
+- **[Prezzi e Piani](/it/05-pricing.md)** - Comprendi i prezzi e la fatturazione
 
 ## Link rapidi
 
@@ -37,15 +37,15 @@ LiteStartup è una piattaforma di email marketing SaaS progettata specificamente
 
 ## Per iniziare
 
-1. **[Leggi l'Introduzione](00-introduction.md)** per capire la piattaforma
-2. **[Segui la Guida introduttiva](01-getting-started.md)** per inviare la tua prima email
-3. **[Controlla il Riferimento API](02-api-reference.md)** per i dettagli tecnici
-4. **[Esamina gli Esempi di codice](04-examples.md)** per il tuo linguaggio di programmazione
-5. **[Esplora le Funzionalità](03-features.md)** per apprendere le capacità avanzate
+1. **[Leggi l'Introduzione](/it/00-introduction.md)** per capire la piattaforma
+2. **[Segui la Guida introduttiva](/it/01-getting-started.md)** per inviare la tua prima email
+3. **[Controlla il Riferimento API](/it/02-api-reference.md)** per i dettagli tecnici
+4. **[Esamina gli Esempi di codice](/it/04-examples.md)** per il tuo linguaggio di programmazione
+5. **[Esplora le Funzionalità](/it/03-features.md)** per apprendere le capacità avanzate
 
 ## Supporto
 
-- 📖 Controlla la nostra [documentazione completa](00-introduction.md)
+- 📖 Controlla la nostra [documentazione completa](/it/00-introduction.md)
 - 💬 Visita [LiteStartup.com](https://www.litestartup.com) per il supporto
 - 🐛 Segnala problemi su GitHub
 - 📧 Contatto: support@litestartup.com

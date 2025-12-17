@@ -8,12 +8,12 @@ LiteStartup é uma plataforma SaaS de email marketing projetada especificamente 
 
 ## Conteúdo da Documentação
 
-- **[Introdução](00-introduction.md)** - Saiba o que é o LiteStartup e por que você deve usá-lo
-- **[Começando](01-getting-started.md)** - Cadastre-se e envie seu primeiro email em 5 minutos
-- **[Referência da API](02-api-reference.md)** - Documentação completa da API e endpoints
-- **[Guia de Recursos](03-features.md)** - Explore todos os recursos em detalhes
-- **[Exemplos de Código](04-examples.md)** - Exemplos de implementação em várias linguagens
-- **[Preços e Planos](05-pricing.md)** - Entenda os preços e faturamento
+- **[Introdução](/pt/00-introduction.md)** - Saiba o que é o LiteStartup e por que você deve usá-lo
+- **[Começando](/pt/01-getting-started.md)** - Cadastre-se e envie seu primeiro email em 5 minutos
+- **[Referência da API](/pt/02-api-reference.md)** - Documentação completa da API e endpoints
+- **[Guia de Recursos](/pt/03-features.md)** - Explore todos os recursos em detalhes
+- **[Exemplos de Código](/pt/04-examples.md)** - Exemplos de implementação em várias linguagens
+- **[Preços e Planos](/pt/05-pricing.md)** - Entenda os preços e faturamento
 
 ## Links Rápidos
 
@@ -37,15 +37,15 @@ LiteStartup é uma plataforma SaaS de email marketing projetada especificamente 
 
 ## Começando
 
-1. **[Leia a Introdução](00-introduction.md)** para entender a plataforma
-2. **[Siga o Guia de Início](01-getting-started.md)** para enviar seu primeiro email
-3. **[Verifique a Referência da API](02-api-reference.md)** para detalhes técnicos
-4. **[Revise os Exemplos de Código](04-examples.md)** para sua linguagem de programação
-5. **[Explore os Recursos](03-features.md)** para aprender capacidades avançadas
+1. **[Leia a Introdução](/pt/00-introduction.md)** para entender a plataforma
+2. **[Siga o Guia de Início](/pt/01-getting-started.md)** para enviar seu primeiro email
+3. **[Verifique a Referência da API](/pt/02-api-reference.md)** para detalhes técnicos
+4. **[Revise os Exemplos de Código](/pt/04-examples.md)** para sua linguagem de programação
+5. **[Explore os Recursos](/pt/03-features.md)** para aprender capacidades avançadas
 
 ## Suporte
 
-- 📖 Verifique nossa [documentação completa](00-introduction.md)
+- 📖 Verifique nossa [documentação completa](/pt/00-introduction.md)
 - 💬 Visite [LiteStartup.com](https://www.litestartup.com) para suporte
 - 🐛 Relate problemas no GitHub
 - 📧 Contato: support@litestartup.com

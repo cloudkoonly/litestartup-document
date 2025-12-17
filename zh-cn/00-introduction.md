@@ -1,139 +1,138 @@
-# LiteStartup 介绍
+# LiteStartup 简介
+ 
+ LiteStartup（官网定位：*Lite Email for Startups*）是一套面向创业团队的 **AI 驱动邮件服务平台**，把 *Workmail（企业邮箱）*、*Transactional Email（事务邮件）*、*Marketing Email（营销邮件）* 等能力整合在一个产品里，并提供可直接调用的 REST API，帮助你用更低成本、更少配置完成邮件发送与增长触达。
+ 
+ ## LiteStartup 是什么？
+ 
+ LiteStartup 是一款 SaaS 邮件平台，核心定义可以概括为：
+ 
+ - **用 AI 改造邮件工作流的邮件服务模型**：从内容生成到自动化触达，尽可能减少人工操作
+ - **同时覆盖“企业邮箱 + 营销邮件 + 事务邮件”**：减少多供应商拼装
+ - **面向开发者的简单集成**：无需复杂 SDK，通过标准 RESTful API 快速接入
+ 
+ 与传统按联系人计费的邮件平台不同，LiteStartup 主打 **按实际发送量计费（pay per email sent）**，而不是按联系人数量收费。
+ 
+ ## 核心特性（What Makes Us Different）
+ 
+ ### Workmail Like Gmail（企业邮箱）
+ 可在几分钟内开通类似 `support@yourcompany.com` 的企业邮箱能力，减少额外采购与配置成本。
+ 
+ ### AI Content Assistant（AI 内容助手）
+ AI 生成营销邮件内容，并给出 A/B 测试变体；从想法到发送可以更快完成。
+ 
+ ### Affordable（按发送计费，更轻量）
+ - **按邮件发送量计费**：不是按联系人计费
+ - **超额费用**：$0.20 / 1,000 emails（超过套餐额度后）
+ - **示例套餐**：Pro 为 $20/月，包含 110,000 emails/月
+ 
+ ### Enterprise Infrastructure（企业级基础设施）
+ 官方描述为由 AWS 与 Google Cloud 工程师构建，提供较高可用与合规能力（SOC2 & GDPR）。
+ 
+ ### Free Email Notifications（免费通知邮箱）
+ 提供类似 `yourname@litestartup.net` 的通知邮箱，用于告警、报表、更新等，减少通知系统搭建成本。
+ 
+ ### AI Website Builder（AI 建站/落地页）
+ 通过与 AI 对话快速生成高转化落地页/Waitlist 页/Newsletter/Blog 等，无需写代码。
+ 
+ ### Ticket + Live Chat（工单与在线客服）
+ - Ticket：用邮件高效管理客户工单
+ - Live Chat：网站实时聊天组件，提升线索转化
+ 
+ ### AI Automation（AI 自动化增长）
+ AI 自动发送欢迎、跟进与外呼邮件，并结合线索捕获等能力，形成“常开”的增长自动化。
 
-LiteStartup 是专为初创企业打造的智能邮件营销平台。它将企业邮箱服务（工作邮箱）、AI 驱动的内容生成以及可靠的邮件投递服务结合在一个价格实惠、易于使用的平台中。
+ ## 谁适合使用 LiteStartup？
 
-## 什么是 LiteStartup？
+ LiteStartup 更适合以下人群/团队：
 
-LiteStartup 是一个 SaaS（软件即服务）邮件平台，帮助初创企业：
+ - **早期创业团队**：需要快速搭建企业邮箱、营销触达与通知邮件
+ - **SaaS 产品**：同时需要事务邮件与营销邮件，并希望用统一平台管理
+ - **增长/市场团队**：希望用 AI 提升邮件内容产出效率与实验速度
+ - **产品团队**：需要 Waitlist、落地页、早期访问邀请等能力
+ - **开发者**：偏好标准 REST API、轻量接入、减少 SDK 依赖
+ - **希望避免供应商锁定的团队**：更易迁移与替换邮件服务
 
-- **发送营销邮件**：内置 AI 内容辅助功能
-- **管理企业邮箱**：具备完整的工作邮箱功能（类似 Gmail）
-- **自动化营销活动**：通过智能工作流实现
-- **建立订阅者列表**：使用嵌入式注册表单
-- **管理等候名单**：在产品发布前积累用户
-- **轻松集成**：几分钟内通过 REST API 完成集成
+ ## LiteStartup 如何工作
 
-与传统的按联系人数量收费的邮件营销平台不同，LiteStartup 按发送邮件数量收费。这意味着您可以导入无限量的联系人，只需为您实际发送的邮件付费。
+ ### 1. 注册
+ 创建账户即可开始使用（免费计划包含每月 10,000 emails）。
 
-## 核心功能
+ ### 2. 获取 API 凭证
+ 在控制台获取 API Key。
 
-### 像 Gmail 一样好用的工作邮箱
-这是唯一内置企业邮箱的邮件营销平台。无需单独订阅 Google Workspace，每个团队成员每年可节省 72-144 美元。
+ ### 3. 集成
+ 通过 RESTful API 调用发送邮件，适配任何语言/框架。
 
-### AI 内容助手
-自动生成邮件主题行、正文内容和 A/B 测试变体。写作速度提升 10 倍，打开率提升 10 倍。从构思到发送仅需 1 分钟。
+ ### 4. 发送邮件
+ 发送事务邮件、营销邮件或触发自动化工作流。
 
-### 实惠的价格
-- **免费计划**：每月 10,000 封邮件
-- **专业计划**：每月 110,000 封邮件，仅需 20 美元/月
-- **按量付费**：超出计划限额后，每 1,000 封邮件 0.20 美元
-- **无联系人费用**：导入 10 万联系人，仅需为发送的邮件付费
+ ### 5. 追踪与优化
+ 查看基础分析数据，并结合 AI 能力持续迭代邮件内容与转化表现。
 
-### 无限联系人
-导入和管理无限数量的联系人。仅需为发送的邮件付费，无需为存储联系人付费。通过 CSV 导入/导出完全拥有数据所有权。
+ ## LiteStartup vs 传统邮件平台
+ 
+|特性|LiteStartup|传统邮件平台|
+|------|------------|--------------|
+|Workmail（企业邮箱）|✓ Included|✗ Separate service|
+|AI Content Assistant|✓ Yes|✗ No|
+|计费模型|Per email sent|Per contact|
+|接入/配置|5 minutes|30+ minutes|
+|API 集成|✓ Simple REST API|✓ Complex SDKs|
+|供应商锁定|✗ None|✓ Yes|
+|免费额度|10K emails/month|Limited|
+|可用性（官网描述）|99.9%|99.9%|
 
-### 企业级基础设施
-由 AWS 和 Google Cloud 工程师构建。99.99% 的在线率，符合 SOC2 和 GDPR 标准。以初创企业的价格享受企业级的可靠性。
+ ## 开始使用
+ 
+ 准备开始发送邮件？你可以从下面几步开始：
 
-### 智能自动化
-- **等候名单管理**：收集邮箱，发送邀请码，自动将等候名单转化为客户
-- **订阅表单**：支持双重确认的可嵌入注册表单，30 秒内嵌入任何地方
-- **AI 自动化**：基于用户行为触发的智能工作流 —— 欢迎系列、重新互动、挽回营销
+1. **[快速入门指南](/zh-cn/01-getting-started.md)** - 注册并在 5 分钟内发送你的第一封邮件
+2. **[API 文档](/zh-cn/02-api-reference.md)** - 完整的 API 文档和端点
+3. **[功能指南](/zh-cn/03-features.md)** - 详细探索所有功能
+4. **[代码示例](/zh-cn/04-examples.md)** - 多种语言的实现示例
+5. **[定价与计划](/zh-cn/05-pricing.md)** - 了解定价和计费
+ 
+ ## 快速调用示例
+ 
+ 用几行代码发送你的第一封邮件：
 
-### 零供应商锁定
-使用标准的 REST API。随时切换供应商而无需更改代码。适用于任何编程语言或框架。
+ ```bash
+ curl -X POST https://api.litestartup.com/client/v2/emails \
+   -H "Authorization: Bearer YOUR_API_KEY" \
+   -H "Content-Type: application/json" \
+   -d '{
+     "to": "user@example.com",
+     "from": "noreply@yourapp.com",
+     "subject": "Welcome!",
+     "html": "<h1>Hello</h1>"
+   }'
+ ```
 
-## 谁应该使用 LiteStartup？
-
-LiteStartup 非常适合：
-
-- **早期初创企业**：建立第一批客户群
-- **SaaS 公司**：需要可靠的交易邮件服务
-- **增长团队**：运行邮件营销活动
-- **产品团队**：管理等候名单和早期访问
-- **开发者**：想要简单且无复杂度的 API 集成
-- **企业**：寻找价格实惠且无供应商锁定的邮件解决方案
-
-## LiteStartup 如何工作
-
-### 1. 注册
-创建一个免费账户，立即获得每月 10,000 封免费邮件额度。
-
-### 2. 获取 API凭证
-几秒钟内从仪表板获取您的 API 密钥。
-
-### 3. 集成
-使用简单的 REST API 从您的应用程序发送邮件。支持任何编程语言。
-
-### 4. 发送邮件
-开始发送交易邮件、营销活动或自动化工作流。
-
-### 5. 追踪与优化
-监控送达率、打开率、点击率，并使用 AI 建议来提升表现。
-
-## LiteStartup vs. 传统邮件平台
-
-| 功能 | LiteStartup | 传统平台 |
-|---------|-------------|----------------------|
-| 工作邮箱 (企业邮箱) | ✓ 包含 | ✗ 需单独购买服务 |
-| AI 内容助手 | ✓ 是 | ✗ 无 |
-| 定价模式 | 按发送邮件付费 | 按联系人付费 |
-| 设置时间 | 5 分钟 | 30+ 分钟 |
-| API 集成 | ✓ 简单的 REST API | ✓ 复杂的 SDK |
-| 供应商锁定 | ✗ 无 | ✓ 有 |
-| 免费层级 | 10,000 封/月 | 有限 |
-| 在线率 SLA | 99.99% | 99.9% |
-
-## 开始使用
-
-准备好开始发送邮件了吗？接下来请做以下事情：
-
-1. **[快速开始指南](01-getting-started.md)** - 5 分钟内注册并发送您的第一封邮件
-2. **[API 参考](02-api-reference.md)** - 完整的 API 文档和端点
-3. **[功能指南](03-features.md)** - 详细了解所有功能
-4. **[代码示例](04-examples.md)** - 多种语言的实现示例
-5. **[价格方案](05-pricing.md)** - 了解价格和计费
-
-## 快速开始示例
-
-仅需几行代码即可发送您的第一封邮件：
-
-```bash
-curl -X POST https://api.litestartup.com/emails/send \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "to": "user@example.com",
-    "from": "hello@yourdomain.com",
-    "subject": "Welcome to LiteStartup!",
-    "html": "<h1>Hello!</h1><p>Welcome to our platform.</p>",
-    "text": "Hello! Welcome to our platform."
-  }'
-```
-
-## 主要优势
-
-✓ **省钱** - 仅按发送邮件付费，而非按联系人
-✓ **省时** - AI 生成内容，设置仅需 5 分钟
-✓ **企业级可靠性** - 99.99% 在线率，符合 SOC2 和 GDPR 标准
-✓ **无锁定** - 标准 REST API，随时切换
-✓ **专为初创企业打造** - 实惠的价格，适合初创企业的功能
-✓ **易于集成** - 支持任何语言或框架
+ ## 关键价值
+ 
+ - **成本更可控**：按邮件发送量计费，而不是按联系人计费
+ - **生产力更高**：AI 内容助手与 AI 自动化减少人工操作
+ - **一体化工具**：Workmail + 邮件发送 + 落地页/Waitlist + Ticket/Live Chat
+ - **轻量集成**：REST API，无复杂 SDK 与依赖
+ - **更少锁定**：标准 API 设计，迁移与替换成本更低
 
 ## 支持与资源
 
 - **文档**：完整的指南和 API 参考
-- **代码示例**：多种语言的现成示例
-- **API 状态**：基础设施的实时状态
-- **社区**：与其他 LiteStartup 用户联系
+
+- **代码示例**：多种语言的即用型示例
+
+- **社区**：与其他 LiteStartup 用户交流
 
 ## 下一步
 
-- 从 [快速开始指南](01-getting-started.md) 开始
-- 探索 [API 参考](02-api-reference.md)
-- 查看适合您编程语言的 [代码示例](04-examples.md)
-- 查看 [价格方案](05-pricing.md) 以找到合适的计划
+- 阅读[入门指南](/zh-cn/01-getting-started.md)
 
+- 浏览[API 参考](/zh-cn/02-api-reference.md)
+
+- 查看[代码示例](/zh-cn/04-examples.md)，找到适合您编程语言的示例
+
+- 查看[定价与套餐](/zh-cn/05-pricing.md)，选择合适的套餐
 ---
 
-**准备好发送您的第一封邮件了吗？** 从 [快速开始指南](01-getting-started.md) 开始吧！
+**准备发送你的第一封邮件？** 从 [快速入门指南](/zh-cn/01-getting-started.md) 开始。

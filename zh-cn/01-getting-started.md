@@ -294,10 +294,10 @@ req.end();
 
 现在您已经发送了第一封邮件，接下来可以探索：
 
-1. **[API 参考](02-api-reference.md)** - 了解所有可用端点
-2. **[功能指南](03-features.md)** - 探索高级功能
-3. **[代码示例](04-examples.md)** - 查看更多实现示例
-4. **[价格方案](05-pricing.md)** - 了解计费和升级选项
+1. **[API 参考](/zh-cn/02-api-reference.md)** - 了解所有可用端点
+2. **[功能指南](/zh-cn/03-features.md)** - 探索高级功能
+3. **[代码示例](/zh-cn/04-examples.md)** - 查看更多实现示例
+4. **[价格方案](/zh-cn/05-pricing.md)** - 了解计费和升级选项
 
 ## 最佳实践
 
@@ -329,11 +329,11 @@ req.end();
 
 ### 需要帮助？
 
-- 查看 [API 参考](02-api-reference.md) 获取详细文档
-- 查看适合您编程语言的 [代码示例](04-examples.md)
-- 查看 [功能指南](03-features.md) 获取特定功能的帮助
+- 查看 [API 参考](/zh-cn/02-api-reference.md) 获取详细文档
+- 查看适合您编程语言的 [代码示例](/zh-cn/04-examples.md)
+- 查看 [功能指南](/zh-cn/03-features.md) 获取特定功能的帮助
 - 通过您的仪表板联系支持
 
 ---
 
-**准备好探索更多了吗？** 查看 [API 参考](02-api-reference.md) 或 [代码示例](04-examples.md)！
+**准备好探索更多了吗？** 查看 [API 参考](/zh-cn/02-api-reference.md) 或 [代码示例](/zh-cn/04-examples.md)！

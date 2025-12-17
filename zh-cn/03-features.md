@@ -613,4 +613,4 @@ $response = $client->post('/emails/send', [
 
 ---
 
-**下一步：** 查看 [代码示例](04-examples.md) 或 [价格方案](05-pricing.md)！
+**下一步：** 查看 [代码示例](/zh-cn/04-examples.md) 或 [价格方案](/zh-cn/05-pricing.md)！

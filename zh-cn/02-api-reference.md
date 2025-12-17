@@ -565,4 +565,4 @@ curl -X GET "https://api.litestartup.com/client/v2/emails?sort=created_at&order=
 
 ---
 
-**下一步：** 查看 [功能指南](03-features.md) 或 [代码示例](04-examples.md)！
+**下一步：** 查看 [功能指南](/zh-cn/03-features.md) 或 [代码示例](/zh-cn/04-examples.md)！

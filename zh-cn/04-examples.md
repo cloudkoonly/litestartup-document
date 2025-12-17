@@ -651,4 +651,4 @@ function sendEmailWithErrorHandling($to, $subject, $message) {
 
 ---
 
-**下一步：** 查看 [价格与方案](05-pricing.md) 或回顾 [功能指南](03-features.md)！
+**下一步：** 查看 [价格与方案](/zh-cn/05-pricing.md) 或回顾 [功能指南](/zh-cn/03-features.md)！

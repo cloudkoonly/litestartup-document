@@ -1,139 +1,134 @@
-# Einführung in LiteStartup
+# Introduction to LiteStartup
+ 
+ LiteStartup (auf der Website positioniert als *Lite Email for Startups*) ist eine **KI-gestützte E-Mail-Service-Plattform** für Startups, die **Workmail (Business-E-Mail)**, **transaktionale E-Mails** und **Marketing-E-Mails** in einem Produkt vereint – mit einer einfachen REST-API, die sich in wenigen Minuten integrieren lässt.
+ 
+ ## Was ist LiteStartup?
+ 
+ LiteStartup ist eine SaaS-E-Mail-Plattform für Startups. In einem Satz:
+ 
+ - **Ein KI-gestütztes E-Mail-Service-Modell**, das deinen E-Mail-Workflow (Inhalte, Automatisierung und Zustellung) optimiert
+ - **Ein einheitlicher Stack für Business-E-Mail + transaktionale E-Mails + Marketing-E-Mails**, der die Anzahl an Anbietern reduziert
+ - **Entwicklerfreundliche Integration** über standardisierte RESTful APIs (keine komplexen SDKs)
+ 
+ Im Gegensatz zu klassischen E-Mail-Marketing-Plattformen, die pro Kontakt abrechnen, setzt LiteStartup auf **Bezahlung pro gesendeter E-Mail** – du zahlst also für das, was du sendest, nicht für das Speichern von Kontakten.
+ 
+ ## Was uns unterscheidet
+ 
+ ### Workmail wie bei Gmail
+ Die EINZIGE E-Mail-Marketing-Plattform mit Business-E-Mail-Adressen wie `support@yourcompany.com` in wenigen Minuten.
+ 
+ ### KI-Content-Assistent
+ KI generiert Marketing-E-Mails und A/B-Test-Varianten, um Schreiben und Iteration zu beschleunigen.
+ 
+ ### Bezahlbar
+ Bezahle pro gesendeter E-Mail, nicht pro Kontakt.
+ 
+ - **Pro**: $20/month for 110,000 emails/month
+ - **Overage**: $0.20 per 1,000 emails after limit
+ 
+ ### Enterprise-Infrastruktur
+ Entwickelt von AWS- und Google-Cloud-Engineers. 99,9% Uptime mit SOC2- und DSGVO-Konformität.
+ 
+ ### Kostenlose E-Mail-Benachrichtigungen
+ Erhalte eine kostenlose E-Mail-Adresse wie `yourname@litestartup.net` für Alerts, Reports und Updates in dein bevorzugtes Postfach.
+ 
+ ### KI-Website-Builder
+ Chatte mit KI, um Landingpages, Waitlist-Seiten, Newsletter und Blogs zu erstellen. Kein Coding nötig.
+ 
+ ### Ticket + Live-Chat
+ Verwalte Kundengespräche mit Tickets (per E-Mail) und einem Echtzeit-Live-Chat-Widget.
+ 
+ ### KI-Automatisierung
+ Always-on-Automatisierung: Willkommens-, Follow-up- und Outreach-E-Mails – mit integriertem Lead-Capture und Growth-Workflows.
+ 
+ ## Für wen ist LiteStartup geeignet?
+ 
+ LiteStartup ist ideal für:
+ 
+ - **Startups in der Frühphase**, die ihre erste Kundschaft aufbauen
+ - **SaaS-Produkte**, die transaktionale und Marketing-E-Mails an einem Ort brauchen
+ - **Growth-Teams**, die KI-unterstützten Content und schnellere Experimente wollen
+ - **Produktteams**, die Landingpages und Waitlists verwalten
+ - **Entwickler**, die einfache REST-APIs mit minimalen Abhängigkeiten bevorzugen
+ - **Teams, die Vendor-Lock-in vermeiden** und später den Anbieter wechseln können möchten
+ 
+ ## So funktioniert LiteStartup
+ 
+ ### 1. Registrieren
+ Erstelle ein Konto und starte mit dem Free-Plan (10.000 E-Mails/Monat).
+ 
+ ### 2. API-Zugangsdaten holen
+ Rufe deinen API-Key im Dashboard ab.
+ 
+ ### 3. Integrieren
+ Sende E-Mails über RESTful API-Calls. Funktioniert mit jeder Sprache und jedem Framework.
+ 
+ ### 4. E-Mails versenden
+ Sende transaktionale E-Mails, Marketing-Kampagnen oder automatisierte Workflows.
+ 
+ ### 5. Messen & optimieren
+ Behalte grundlegende Analytics im Blick und verbessere iterativ mit KI-Unterstützung.
+ 
+ ## LiteStartup vs. traditionelle E-Mail-Plattformen
+ 
+ | Funktion | LiteStartup | Traditionelle Plattformen |
+ |---|---|---|
+ | Workmail (Business-E-Mail) | ✓ Inklusive | ✗ Separater Dienst |
+ | KI-Content-Assistent | ✓ Ja | ✗ Nein |
+ | Preismodell | Pro gesendeter E-Mail | Pro Kontakt |
+ | Einrichtungszeit | 5 Minuten | 30+ Minuten |
+ | API-Integration | ✓ Einfache REST-API | ✓ Komplexe SDKs |
+ | Vendor-Lock-in | ✗ Keiner | ✓ Ja |
+ | Kostenloser Plan | 10.000 E-Mails/Monat | Begrenzt |
+ | Uptime (Website) | 99,9% | 99,9% |
+ 
+ ## Erste Schritte
+ 
+ Bereit, E-Mails zu versenden? Das sind die nächsten Schritte:
+ 
+ 1. **[Getting Started Guide](/de/01-getting-started.md)** - Registriere dich und sende deine erste E-Mail in wenigen Minuten
+ 2. **[API Reference](/de/02-api-reference.md)** - Vollständige API-Dokumentation und Endpoints
+ 3. **[Features Guide](/de/03-features.md)** - Alle Features im Detail
+ 4. **[Code Examples](/de/04-examples.md)** - Implementierungsbeispiele in mehreren Sprachen
+ 5. **[Pricing & Plans](/de/05-pricing.md)** - Preise und Abrechnung verstehen
+ 
+ ## Quick-Start-Beispiel
+ 
+ Sende deine erste E-Mail mit nur wenigen Zeilen Code:
 
-LiteStartup ist eine intelligente E-Mail-Marketing-Plattform, die speziell für Startups entwickelt wurde. Sie kombiniert die Leistung eines geschäftlichen E-Mail-Dienstes (Workmail), KI-gestützte Inhaltserstellung und zuverlässige E-Mail-Zustellung in einer erschwinglichen, benutzerfreundlichen Plattform.
+ ```bash
+ curl -X POST https://api.litestartup.com/client/v2/emails \
+   -H "Authorization: Bearer YOUR_API_KEY" \
+   -H "Content-Type: application/json" \
+   -d '{
+     "to": "user@example.com",
+     "from": "noreply@yourapp.com",
+     "subject": "Welcome!",
+     "html": "<h1>Hello</h1>"
+   }'
+ ```
 
-## Was ist LiteStartup?
-
-LiteStartup ist eine SaaS (Software as a Service) E-Mail-Plattform, die Startups hilft:
-
-- **Marketing-E-Mails zu senden** mit integrierter KI-Inhaltsunterstützung
-- **Geschäfts-E-Mails zu verwalten** mit Workmail-Funktionalität (wie Gmail)
-- **Kampagnen zu automatisieren** mit intelligenten Workflows
-- **Abonnentenlisten aufzubauen** mit eingebetteten Anmeldeformularen
-- **Wartelisten zu verwalten** vor dem Produktstart
-- **Einfach zu integrieren** über REST-API in Minuten
-
-Im Gegensatz zu traditionellen E-Mail-Marketing-Plattformen, die pro Kontakt berechnen, berechnet LiteStartup pro gesendeter E-Mail. Das bedeutet, dass Sie unbegrenzt Kontakte importieren können und nur für die E-Mails bezahlen, die Sie tatsächlich senden.
-
-## Hauptmerkmale
-
-### Workmail wie Gmail
-Die einzige E-Mail-Marketing-Plattform mit integrierter geschäftlicher E-Mail. Keine separaten Google Workspace-Abonnements erforderlich. Sparen Sie 72-144 $ pro Jahr pro Teammitglied.
-
-### KI-Inhalts-Assistent
-Generieren Sie automatisch Betreffzeilen, E-Mail-Texte und A/B-Testvariationen. Schreiben Sie E-Mails 10-mal schneller mit 10-mal besseren Öffnungsraten. Von der Idee bis zum Versand in nur 1 Minute.
-
-### Erschwingliche Preise
-- **Kostenloser Plan**: 10.000 E-Mails pro Monat
-- **Pro-Plan**: 110.000 E-Mails pro Monat für 20 $/Monat
-- **Pay-as-you-go**: 0,20 $ pro 1.000 E-Mails nach Ihrem Planlimit
-- **Keine Gebühren pro Kontakt**: Importieren Sie 100.000 Kontakte, zahlen Sie nur für gesendete E-Mails
-
-### Unbegrenzte Kontakte
-Importieren und verwalten Sie unbegrenzt viele Kontakte. Zahlen Sie nur für gesendete E-Mails, nicht für das Speichern von Kontakten. Volles Dateneigentum mit CSV-Import/Export.
-
-### Unternehmensinfrastruktur
-Erstellt von AWS- & Google Cloud-Ingenieuren. 99,99 % Verfügbarkeit mit SOC2- & GDPR-Konformität. Startup-Preise mit Zuverlässigkeit auf Unternehmensniveau.
-
-### Intelligente Automatisierung
-- **Wartelisten-Management**: E-Mails sammeln, Einladungscodes senden, Warteliste automatisch in Kunden umwandeln
-- **Abonnementformulare**: Einbettbare Anmeldeformulare mit Double Opt-in, überall in 30 Sekunden einbetten
-- **KI-Automatisierung**: Intelligente Workflows, die durch Benutzerverhalten ausgelöst werden - Willkommensserien, Re-Engagement, Rückgewinnungskampagnen
-
-### Kein Vendor Lock-in
-Verwenden Sie Standard-REST-APIs. Wechseln Sie den Anbieter jederzeit ohne Codeänderungen. Funktioniert mit jeder Programmiersprache oder jedem Framework.
-
-## Wer sollte LiteStartup nutzen?
-
-LiteStartup ist ideal für:
-
-- **Startups in der Frühphase**, die ihren ersten Kundenstamm aufbauen
-- **SaaS-Unternehmen**, die zuverlässige Transaktions-E-Mails benötigen
-- **Wachstumsteams**, die E-Mail-Marketing-Kampagnen durchführen
-- **Produktteams**, die Wartelisten und Early Access verwalten
-- **Entwickler**, die eine einfache API-Integration ohne Komplexität wünschen
-- **Unternehmen**, die nach erschwinglichen E-Mail-Lösungen ohne Vendor Lock-in suchen
-
-## Wie LiteStartup funktioniert
-
-### 1. Registrieren
-Erstellen Sie ein kostenloses Konto und legen Sie sofort mit 10.000 kostenlosen E-Mails pro Monat los.
-
-### 2. API-Anmeldeinformationen erhalten
-Rufen Sie Ihren API-Schlüssel in Sekundenschnelle über das Dashboard ab.
-
-### 3. Integrieren
-Verwenden Sie die einfache REST-API, um E-Mails aus Ihrer Anwendung zu senden. Funktioniert mit jeder Programmiersprache.
-
-### 4. E-Mails senden
-Beginnen Sie mit dem Senden von Transaktions-E-Mails, Marketingkampagnen oder automatisierten Workflows.
-
-### 5. Verfolgen & Optimieren
-Überwachen Sie Zustellung, Öffnungen, Klicks und nutzen Sie KI-Vorschläge, um die Leistung zu verbessern.
-
-## LiteStartup vs. Traditionelle E-Mail-Plattformen
-
-| Funktion | LiteStartup | Traditionelle Plattformen |
-|---------|-------------|----------------------|
-| Workmail (Geschäfts-E-Mail) | ✓ Inklusive | ✗ Separater Dienst |
-| KI-Inhalts-Assistent | ✓ Ja | ✗ Nein |
-| Preismodell | Pro gesendeter E-Mail | Pro Kontakt |
-| Einrichtungszeit | 5 Minuten | 30+ Minuten |
-| API-Integration | ✓ Einfache REST-API | ✓ Komplexe SDKs |
-| Vendor Lock-in | ✗ Keiner | ✓ Ja |
-| Kostenlose Stufe | 10K E-Mails/Monat | Begrenzt |
-| Verfügbarkeit SLA | 99,99% | 99,9% |
-
-## Erste Schritte
-
-Bereit, E-Mails zu senden? Hier ist, was als nächstes zu tun ist:
-
-1. **[Leitfaden für erste Schritte](01-getting-started.md)** - Registrieren Sie sich und senden Sie Ihre erste E-Mail in 5 Minuten
-2. **[API-Referenz](02-api-reference.md)** - Vollständige API-Dokumentation und Endpunkte
-3. **[Funktionsübersicht](03-features.md)** - Erkunden Sie alle Funktionen im Detail
-4. **[Code-Beispiele](04-examples.md)** - Implementierungsbeispiele in mehreren Sprachen
-5. **[Preise & Pläne](05-pricing.md)** - Verstehen Sie Preise und Abrechnung
-
-## Schnellstart-Beispiel
-
-Senden Sie Ihre erste E-Mail mit nur wenigen Zeilen Code:
-
-```bash
-curl -X POST https://api.litestartup.com/emails/send \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "to": "user@example.com",
-    "from": "hello@yourdomain.com",
-    "subject": "Welcome to LiteStartup!",
-    "html": "<h1>Hello!</h1><p>Welcome to our platform.</p>",
-    "text": "Hello! Welcome to our platform."
-  }'
-```
-
-## Hauptvorteile
-
-✓ **Geld sparen** - Zahlen Sie nur für gesendete E-Mails, nicht pro Kontakt
-✓ **Zeit sparen** - KI generiert Inhalte, Einrichtung dauert 5 Minuten
-✓ **Zuverlässigkeit für Unternehmen** - 99,99% Verfügbarkeit, SOC2- & GDPR-konform
-✓ **Kein Lock-in** - Standard-REST-API, jederzeit wechseln
-✓ **Für Startups gebaut** - Erschwingliche Preise, startup-freundliche Funktionen
-✓ **Einfache Integration** - Funktioniert mit jeder Sprache oder jedem Framework
-
-## Support & Ressourcen
-
-- **Dokumentation**: Vollständige Anleitungen und API-Referenz
-- **Code-Beispiele**: Gebrauchsfertige Beispiele in mehreren Sprachen
-- **API-Status**: Echtzeit-Status unserer Infrastruktur
-- **Community**: Vernetzen Sie sich mit anderen LiteStartup-Benutzern
-
-## Nächste Schritte
-
-- Beginnen Sie mit dem [Leitfaden für erste Schritte](01-getting-started.md)
-- Erkunden Sie die [API-Referenz](02-api-reference.md)
-- Sehen Sie sich [Code-Beispiele](04-examples.md) für Ihre Programmiersprache an
-- Prüfen Sie [Preise & Pläne](05-pricing.md), um den richtigen Plan zu finden
+ ## Wichtigste Vorteile
+ 
+ - **Geringere Kosten** - Bezahle pro gesendeter E-Mail, nicht pro Kontakt
+ - **Höhere Produktivität** - KI-Content-Unterstützung und KI-Automatisierung reduzieren manuelle Arbeit
+ - **All-in-one-Toolkit** - Workmail + Versand + Landingpages/Waitlists + Ticket/Live-Chat
+ - **Schnelle Integration** - REST-API ohne komplexe SDK-Abhängigkeiten
+ - **Weniger Lock-in** - Standard-APIs erleichtern den späteren Anbieterwechsel
+ 
+ ## Support & Ressourcen
+ 
+ - **Dokumentation**: Vollständige Guides und API-Referenz
+ - **Code-Beispiele**: Sofort nutzbare Beispiele in mehreren Sprachen
+ - **Community**: Austausch mit anderen LiteStartup-Nutzern
+ 
+ ## Nächste Schritte
+ 
+ - Starte mit dem [Getting Started Guide](/de/01-getting-started.md)
+ - Schau dir die [API Reference](/de/02-api-reference.md) an
+ - Sieh dir die [Code Examples](/de/04-examples.md) für deine Programmiersprache an
+ - Prüfe [Pricing & Plans](/de/05-pricing.md), um den passenden Plan zu finden
 
 ---
-
-**Bereit, Ihre erste E-Mail zu senden?** Beginnen Sie mit dem [Leitfaden für erste Schritte](01-getting-started.md)!
+ 
+ **Bereit, deine erste E-Mail zu versenden?** Starte mit dem [Getting Started Guide](/de/01-getting-started.md).
